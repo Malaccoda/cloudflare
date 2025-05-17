@@ -1,0 +1,19 @@
+{
+    "scripts": {
+        "dev": "pnpm --parallel --filter \"./(frontends|backends)/*\" run dev",
+        "build": "pnpm --recursive --filter \"./(frontends|backends)/*\" run build",
+        "start:shell": "pnpm --filter shell run dev",
+        "start:vue-mfe": "pnpm --filter cfpage-vue run dev",
+        "start:solid-mfe": "pnpm --filter cfpage-solid run dev",
+        "start:hono-worker": "pnpm --filter cfworker-hono run dev",
+        "lint": "eslint .",
+        "format": "prettier --write ."
+    },
+    "packageManager": "pnpm@10.7.0+sha512.6b865ad4b62a1d9842b61d674a393903b871d9244954f652b8842c2b553c72176b278f64c463e52d40fff8aba385c235c8c9ecf5cc7de4fd78b8bb6d49633ab6",
+    "dependencies": {
+        "@rsbuild/core": "^1.3.1",
+        "@rsbuild/plugin-solid": "^1.0.5",
+        "@rsbuild/plugin-vue": "^1.0.7",
+        "typescript": "^5.8.2"
+    }
+}

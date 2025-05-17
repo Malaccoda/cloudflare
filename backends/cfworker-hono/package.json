@@ -1,0 +1,19 @@
+{
+	"name": "fancy-lab-1a79",
+	"scripts": {
+		"dev": "wrangler dev",
+		"deploy": "wrangler deploy --minify",
+		"cf-typegen": "wrangler types --env-interface CloudflareBindings"
+	},
+	"dependencies": {
+		"hono": "^4.7.7",
+		"prisma": "^6.7.0"
+	},
+	"devDependencies": {
+		"@faker-js/faker": "^9.7.0",
+		"@prisma/adapter-d1": "^6.7.0",
+		"@prisma/client": "^6.7.0",
+		"wrangler": "^4.13.2"
+	},
+	"packageManager": "pnpm@10.7.0+sha512.6b865ad4b62a1d9842b61d674a393903b871d9244954f652b8842c2b553c72176b278f64c463e52d40fff8aba385c235c8c9ecf5cc7de4fd78b8bb6d49633ab6"
+}
